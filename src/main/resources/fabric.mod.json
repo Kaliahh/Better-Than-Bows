@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "better_than_bows",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Better Than Bows",
+  "description": "This mod adds more ranged options.",
   "authors": [
-    "Turnip Labs"
+    "Kaliah"
   ],
   "contact": {
     "homepage": "",
@@ -18,11 +18,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-        "turniplabs.examplemod.ExampleMod"
+        "kaliah.better_than_bows.BetterThanBows"
     ]
   },
   "mixins": [
-      "examplemod.mixins.json"
+      "better_than_bows.mixins.json"
   ],
 
   "depends": {

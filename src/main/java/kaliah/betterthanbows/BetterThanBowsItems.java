@@ -18,20 +18,21 @@ public class BetterThanBowsItems implements ItemInitEntrypoint {
 
 	@Override
 	public void afterItemInit() {
-		slingshot = createWeapon("slingshot");
+		slingshot = createWeapon("slingshot", 50);
 	}
 
-	private Item createWeapon(String translationKey) {
-		return createItem(new ItemSlingshot(translationKey, formatNamespaceId(translationKey), itemId++), translationKey);
+	private Item createWeapon(String translationKey, int maxDamage) {
+		return createItem(new ItemSlingshot(translationKey, formatNamespaceId(translationKey), itemId++), maxDamage, translationKey);
 	}
 
 	private String formatNamespaceId(String translationKey) {
 		return String.format("%s:item/%s", MOD_ID, translationKey);
 	}
 
-	private Item createItem(Item item, String texture) {
+	private Item createItem(Item item, int maxDamage, String texture) {
 		textures.put(item, texture);
 		return new ItemBuilder(MOD_ID)
+			.setMaxDamage(maxDamage)
 			.build(item);
 	}
 }

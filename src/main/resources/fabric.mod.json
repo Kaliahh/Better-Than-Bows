@@ -21,14 +21,14 @@
     "main": [
 			"kaliah.betterthanbows.BetterThanBows"
     ],
-		"beforeGameStart": [
-			"kaliah.betterthanbows.BetterThanBows"
-		],
-		"afterGameStart": [
-			"kaliah.betterthanbows.BetterThanBows"
-		],
 		"recipesReady": [
-			"kaliah.betterthanbows.BetterThanBows"
+			"kaliah.betterthanbows.BetterThanBowsRecipes"
+		],
+		"afterItemInit": [
+			"kaliah.betterthanbows.BetterThanBowsItems"
+		],
+		"initModels": [
+			"kaliah.betterthanbows.BetterThanBowsModels"
 		]
 	},
   "mixins": [
